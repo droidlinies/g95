@@ -1,1 +1,2 @@
-# g95
+# Graphica website
+built with tailwind css
