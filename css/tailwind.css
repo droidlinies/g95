@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html,
+body {
+  margin: 0;
+  padding: 0;
+height: 100%;
+}
 
 @layer utilities { .modal {
     transition: opacity 0.25s ease;
@@ -8,5 +14,17 @@
   body.modal-active {
     overflow-x: hidden;
     overflow-y: visible !important;
+  }
+  .bg img{
+    width:100%;
+    height: 100px;
+  }
+  
+  .slide {
+    
+    @apply relative flex-auto bg-cover bg-center transition-all duration-500 ease-in-out;
+  }
+  .slide:hover {
+    @apply flex-5;
   }
 }
